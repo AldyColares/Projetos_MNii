@@ -1,6 +1,7 @@
 
+#inacabado. Falta escrever a entrada do arquivo e a manipular os valores.
 
-h=(b-a)/n #a é o inicio da função e b o final em relação a x. 
+h=(b-a)/n #a é o inicio da função e b o final em relação a x da função. 
 
 acumulador 0,0000
 primeiro_posicao = f(x0)#f() É a função. 
