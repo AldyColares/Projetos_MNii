@@ -22,8 +22,8 @@ funcao_xm = listaStr[tamanhoLista-1].split()[2]
 funcao_xm = float(funcao_xm)
 
 acumulador=0.00000000
+i=4 #depende da posicao da tabela onde esta o f(x) do segundo ponto.
 while (a+h < b):
-  i=4 #depende da posicao da tabela onde esta o f(x) do segundo ponto.
   acumulador = acumulador + float(listaStr[i].split()[2]) 
   a = a+h
   i = i+1  
