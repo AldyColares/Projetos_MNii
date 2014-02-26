@@ -1,14 +1,34 @@
+arquivo = open("arquivo.txt", "r")
 
-#inacabado. Falta escrever a entrada do arquivo e a manipular os valores.
+tabela = arquivo.read()
+arquivo.close()
 
-h=(b-a)/n #a é o inicio da função e b o final em relação a x da função. 
+listaStr = tabela.readlines()
+#com quatro linhas obtenho uma lista de string com toda a tabela nela. 
 
-acumulador 0,0000
-primeiro_posicao = f(x0)#f() É a função. 
-ultimo_posicao = f(xm)
+tamanhoLista = len(listaStr)
+tamanhoLista = int(tamanhoLista) 
+
+m = listaStr[0].splint[0]
+m = float(m)
+a= listaStr[2].splint[1]
+a = float(a)
+b= listaStr[tamanhoLista].splint[1]
+b = float(b)
+
+h=(b-a)/m #'a' e o inicio da funcao e 'b' o final em relacao a x da funcao. 
+ 
+funcao_x0 = listaStr[2].splint[2]
+funcao_x0 = float(funcao_x0) 
+funcao_xm = listaStr[tamanhoLista].splint[2]
+funcao_xm = float(funcao_xm)
+
+acumulador=0.00000000
 while a+h < b
-  acumulador = acumulador + f(a+h)
+  i=4 #depende da posicao da tabela onde esta o f(x) do segundo ponto.
+  acumulador = acumulador + float(listaStr[i].splint[2]) 
   a = a+h
+  i = i+1  
 
-valor_aproximado = primeira_posicao + 2*(acumulador) + ultimo_posicao
+valor_aproximado = funcao_x0 + 2*(acumulador) + funcao_xm
 print "valor aproximado = ", valor_aproximado 
