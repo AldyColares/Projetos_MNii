@@ -30,6 +30,6 @@ while a+h < b
   a = a+h
   i = i+1  
 
-valor_aproximado = funcao_x0 + 2*(acumulador) + funcao_xm
+valor_aproximado = (h/2)*(funcao_x0 + 2*(acumulador) + funcao_xm)
 
 print "valor aproximado = ", valor_aproximado 
