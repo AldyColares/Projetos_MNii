@@ -27,7 +27,7 @@ k=1
 while ( i <= m*2+1 ):
 	L[j] = dados[i]
 	i = i+2
-	j = j+1
+	j = j+1 
 while(k<m):
 	if int(k) % 2 == 0:
 		S1 = S1 + L[k]	
